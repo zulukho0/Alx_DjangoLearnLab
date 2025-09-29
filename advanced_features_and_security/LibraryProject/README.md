@@ -16,3 +16,12 @@
 - All forms include {% csrf_token %}
 - ORM used for all queries; raw SQL avoided
 - CSP headers configured via django-csp
+
+
+# HTTPS and Secure Redirects
+
+- SECURE_SSL_REDIRECT enabled to force HTTPS
+- HSTS headers configured for long-term HTTPS enforcement
+- Secure cookies: SESSION_COOKIE_SECURE and CSRF_COOKIE_SECURE
+- Protective headers: X_FRAME_OPTIONS, SECURE_CONTENT_TYPE_NOSNIFF, SECURE_BROWSER_XSS_FILTER
+- Web server configured with SSL certificates and HTTPS redirects
